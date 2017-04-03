@@ -3,9 +3,7 @@ package com.example.alumno.clase03;
 import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity  {
 
         Modelo model=new Modelo("Este es otro texto");
         Vista vista=new Vista(this,model);
-        //Controlador control=new Controlador(new MyListener(vista));
+        Controlador control=new Controlador(new MyListener(vista));
 
     }
 
