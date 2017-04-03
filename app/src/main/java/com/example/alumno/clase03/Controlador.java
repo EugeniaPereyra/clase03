@@ -7,21 +7,13 @@ package com.example.alumno.clase03;
 public class Controlador {
 
     private MyListener listener;
-    private Vista vista;
 
-    public Controlador(MyListener listener, Vista vista)
+    public Controlador(MyListener listener)
     {
         this.listener=listener;
-        this.vista=vista;
     }
 
     public MyListener getListener(){
         return this.listener;
     }
-
-    public void mostrar()
-    {
-        this.vista.mostrarInfo();
-    }
-
 }
