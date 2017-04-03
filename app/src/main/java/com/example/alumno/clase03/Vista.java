@@ -8,16 +8,16 @@ import android.app.Activity;
 
 public class Vista implements IMostrar {
 
-    TextView tv;
-    Button boton;
+    private TextView tv;
+    private Button boton;
 
     public Vista(Activity a, Modelo m)
     {
-        tv = (TextView) a.findViewById(R.id.tvSaludo); // super es que hereda del padre
-        tv.setText("holaaaaaaaaaa");
+        this.tv = (TextView) a.findViewById(R.id.tvSaludo); // super es que hereda del padre
+        this.tv.setText("holaaaaaaaaaa");
 
-        boton = (Button) a.findViewById(R.id.boton1);
-        boton.setText("Cambiar texto");
+        this.boton = (Button) a.findViewById(R.id.boton1);
+        this.boton.setText("Cambiar texto");
        // boton.setOnClickListener();
 
     }
